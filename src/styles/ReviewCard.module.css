@@ -1,0 +1,63 @@
+.reviewCardHolder{
+    height: 15rem;
+    width: 22rem;
+    background: linear-gradient(to right, #10b981 , #60a5fa);
+    border-radius: 0.5rem;
+    position: relative;
+}
+.reviewCard{
+    height: 15rem;
+    width: 22rem;
+    display: grid;
+    border: 0.2rem solid #fbbf24;
+    grid-template-rows: 6rem 6rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: -0.5rem;
+    bottom: -0.5rem;
+    background: #0a1129;
+    padding: 1rem;
+}
+
+.cardHeader {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cardHeader .cardHeaderUser{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardHeader figcaption img{
+    height: 1rem;
+    width: 2rem;
+}
+
+.cardHeader .cardHeaderUserInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cardHeader .cardHeaderUserInfo div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardHeader .cardHeaderUserInfo h3{
+    color: white;
+}
+
+.cardHeader .cardHeaderUserInfo small{
+    color: #fbbf24;
+}
+
+.reviewCard .cardInfo{
+    color: white;
+}
+
