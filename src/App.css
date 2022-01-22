@@ -1,7 +1,103 @@
 .App {
   /* text-align: center; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  /* background-image: url(https://www.dailytravelphotos.com/images/2009/090130_bangkok_thailand_amateur_singer_thai_girl_lights_park_outdoors_travel_photography_IMG_6749.jpg); */
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* background-repeat: no-repeat; */
+  background: linear-gradient(to bottom, transparent, #0a1129), url(https://www.dailytravelphotos.com/images/2009/090130_bangkok_thailand_amateur_singer_thai_girl_lights_park_outdoors_travel_photography_IMG_6749.jpg) no-repeat center center/ cover;
+  /* background-blend-mode: multiply; */
+  position: relative;
+  z-index: -1;
+}
+
+.hero{
+  width: 100%;
+  padding: 0 5rem;
+  margin-top: 10rem;
+}
+
+.hero-heading{
+  font-size: 4rem;
+  color: white;
+
+}
+
+.hero-description{
+  color: #ddd;
+
+}
+
+.circle-container{
+  display: flex;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+
+.shows-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.shows-container-heading{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+.shows-container-heading h1{
+  color: white;
+  position: relative;
+}
+
+.shows-container-heading h1::after{
+  height: 0.2rem;
+  width: 5rem;
+  background-color: blue;
+  display: block;
+  position: absolute;
+}
+
+.shows-container-heading h5{
+  color: #fbbf24;
+}
+
+.card-container{
+  display: flex;
+  gap: 2rem;
+
+}
+
+.review-list{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.review-container{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.review-container-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-container-header h1{
+  color: white;
+}
+
+.review-container-header div{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
